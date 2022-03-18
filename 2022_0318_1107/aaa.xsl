@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <xsl:stylesheet version="1.0"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    <xsl:variable name="header">
+        <tr bgcolor="#9acd32">
+            <th align="left">Title</th>
+            <th align="left">Artist</th>
+        </tr>
+    </xsl:variable>
     
     <xsl:template match="/">
         <html>
@@ -9,10 +15,7 @@
                 <xsl:apply-templates select="catalog/div"/> 
                 
                 <table border="1">
-                    <tr bgcolor="#9acd32">
-                        <th align="left">Title</th>
-                        <th align="left">Artist</th>
-                    </tr>
+                    <xsl:copy-of select="$header" />
                     <xsl:for-each select="catalog/cd">
                         <tr>
                             <td><xsl:value-of select="title"/></td>

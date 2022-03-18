@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <xsl:stylesheet version="1.0"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    <xsl:variable name="header">
+        <tr bgcolor="#9acd32">
+            <th align="left">Title</th>
+            <th align="left">Artist</th>
+        </tr>
+    </xsl:variable>
     
     <xsl:template match="/">
         <html>
@@ -8,18 +14,21 @@
                 <h2>My CD Collection</h2>
                 <xsl:apply-templates select="catalog/div"/> 
                 
-                <table border="1">
-                    <tr bgcolor="#9acd32">
-                        <th align="left">Title</th>
-                        <th align="left">Artist</th>
-                    </tr>
+                <!-- <xsl:copy-of select="$header" /> -->
+                <p>Titles:
                     <xsl:for-each select="catalog/cd">
-                        <tr>
-                            <td><xsl:value-of select="title"/></td>
-                            <td><xsl:value-of select="artist"/></td>
-                        </tr>
+                        <xsl:value-of select="title"/>
+                        <xsl:if test="position()!=last()">
+                            <xsl:text>, </xsl:text>
+                        </xsl:if>
+                        <xsl:if test="position()=last()-1">
+                            <xsl:text> and </xsl:text>
+                        </xsl:if>
+                        <xsl:if test="position()=last()">
+                            <xsl:text>!</xsl:text>
+                        </xsl:if>
                     </xsl:for-each>
-                </table>
+                </p>
             </body>
         </html>
     </xsl:template>
