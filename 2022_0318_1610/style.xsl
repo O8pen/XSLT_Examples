@@ -22,10 +22,10 @@
                 <h2>My CD Collection</h2>
                 <xsl:apply-templates select="catalog/div"/>
                 
-                <xsl:comment>This is a comment!</xsl:comment>
+                <!-- <xsl:comment>This is a comment!</xsl:comment> -->
                 
                 <table border="1">
-                    <xsl:copy-of select="$header" />
+                    <xsl:copy-of select="$header" />                    
                     <xsl:for-each select="catalog/cd">
                         <xsl:sort select="title"/>
                         <xsl:if test="position()=last()">
@@ -34,8 +34,28 @@
                                 <td><xsl:value-of select="artist"/></td>
                             </tr>
                         </xsl:if>
+                        
                     </xsl:for-each>
                 </table>
+                <xsl:for-each select="catalog/cd">                    
+                    <!-- <xsl:if test="artist='Bonnie Tyler'">
+                         <p>
+                         <xsl:message terminate="no">
+                         Error: Artist is Bonnie Tyler!
+                         </xsl:message>
+                         </p>
+                         </xsl:if>                     -->
+                    <xsl:if test="artist='Bonnie Tyler'">
+                        <h1><xsl:value-of select="title"/></h1>
+                    </xsl:if>
+                </xsl:for-each>
+                <!-- <h1><xsl:value-of select="//country[. eq 'USA']/../title"/></h1> -->
+                <xsl:for-each select="//value"> 
+                    <h1><xsl:value-of select="../test"/></h1>
+                </xsl:for-each>
+                
+                
+                
                 <h1><xsl:value-of select="sum(catalog/cd/year)"/></h1>
             </body>
         </html>
@@ -49,7 +69,7 @@
         <h1><xsl:value-of select="floor(divdiv/value + asd/value)"/></h1>
     </xsl:template>
     
-    <xsl:template match="divdiv">        
+    <xsl:template match="divdiv">
         <h1><xsl:value-of select="test"/></h1>
         <h2><xsl:value-of select="value"/></h2>        
     </xsl:template>
