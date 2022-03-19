@@ -20,8 +20,8 @@
         <price>10.90</price>
         <year>1985</year>
         <anan>
-            <baban>22222</baban>
-            <amcan>2</amcan>
+            <baban id='0'>22222</baban>
+            <amcan>3</amcan>
         </anan>
     </cd>
     <cd>
@@ -32,7 +32,7 @@
         <price>9.90</price>
         <year>1988</year>
         <anan>
-            <baban>22222</baban>
+            <baban id='1'>22222</baban>
             <amcan>2</amcan>
         </anan>
     </cd>
@@ -44,7 +44,7 @@
         <price>9.90</price>
         <year>1982</year>
         <anan>
-            <baban>22222</baban>
+            <baban id='1'>22222</baban>
             <amcan>2</amcan>
         </anan>
     </cd>
@@ -56,7 +56,7 @@
         <price>10.20</price>
         <year>1990</year>
         <anan>
-            <baban>1</baban>
+            <baban id='1'>1</baban>
         </anan>
     </cd>
     <cd>
@@ -67,7 +67,7 @@
         <price>9.90</price>
         <year>1997</year>
         <anan>
-            <baban>1</baban>
+            <baban id='1'>1</baban>
         </anan>
     </cd>
     <cd>
@@ -78,7 +78,7 @@
         <price>10.90</price>
         <year>1998</year>
         <anan>
-            <baban>1</baban>
+            <baban id='1'>1</baban>
         </anan>
     </cd>
     <cd>
@@ -89,7 +89,7 @@
         <price>8.10</price>
         <year>1973</year>
         <anan>
-            <baban>1</baban>
+            <baban id='1'>1</baban>
         </anan>
     </cd>
     <cd>
@@ -100,7 +100,7 @@
         <price>8.50</price>
         <year>1990</year>
         <anan>
-            <baban>1</baban>
+            <baban id='1'>1</baban>
         </anan>
     </cd>
     <cd>
@@ -111,7 +111,7 @@
         <price>10.80</price>
         <year>1996</year>
         <anan>
-            <baban>1</baban>
+            <baban id='1'>1</baban>
         </anan>
     </cd>
     <cd>
@@ -122,7 +122,7 @@
         <price>8.70</price>
         <year>1987</year>
         <anan>
-            <baban>1</baban>
+            <baban id='1'>1</baban>
         </anan>
     </cd>
     <cd>
@@ -133,7 +133,7 @@
         <price>10.90</price>
         <year>1995</year>
         <anan>
-            <baban>1</baban>
+            <baban id='1'>1</baban>
         </anan>
     </cd>
     <cd>
@@ -144,7 +144,7 @@
         <price>10.20</price>
         <year>1999</year>
         <anan>
-            <baban>1</baban>
+            <baban id='1'>1</baban>
         </anan>
     </cd>
     <cd>
@@ -155,7 +155,7 @@
         <price>8.70</price>
         <year>1995</year>
         <anan>
-            <baban>1</baban>
+            <baban id='1'>1</baban>
         </anan>
     </cd>
     <cd>
@@ -166,7 +166,7 @@
         <price>9.90</price>
         <year>1997</year>
         <anan>
-            <baban>1</baban>
+            <baban id='1'>1</baban>
         </anan>
     </cd>
     <cd>
@@ -177,7 +177,7 @@
         <price>8.20</price>
         <year>1971</year>
         <anan>
-            <baban>1</baban>
+            <baban id='1'>1</baban>
         </anan>
     </cd>
     <cd>
@@ -188,7 +188,7 @@
         <price>7.90</price>
         <year>1996</year>
         <anan>
-            <baban>1</baban>
+            <baban id='1'>1</baban>
         </anan>
     </cd>
     <cd>
@@ -199,7 +199,7 @@
         <price>8.90</price>
         <year>1990</year>
         <anan>
-            <baban>1</baban>
+            <baban id='1'>1</baban>
         </anan>
     </cd>
     <cd>
@@ -210,7 +210,7 @@
         <price>8.90</price>
         <year>1988</year>
         <anan>
-            <baban>1</baban>
+            <baban id='1'>1</baban>
         </anan>
     </cd>
     <cd>
@@ -221,7 +221,7 @@
         <price>7.90</price>
         <year>1987</year>
         <anan>
-            <baban>1</baban>
+            <baban id='1'>1</baban>
         </anan>
     </cd>
     <cd>
@@ -232,7 +232,7 @@
         <price>8.90</price>
         <year>1983</year>
         <anan>
-            <baban>1</baban>
+            <baban id='1'>1</baban>
         </anan>
     </cd>
     <cd>
@@ -243,7 +243,7 @@
         <price>7.80</price>
         <year>1983</year>
         <anan>
-            <baban>1</baban>
+            <baban id='1'>1</baban>
         </anan>
     </cd>
     <cd>
@@ -254,7 +254,7 @@
         <price>9.90</price>
         <year>1991</year>
         <anan>
-            <baban>1</baban>
+            <baban id='1'>1</baban>
         </anan>
     </cd>
     <cd>
@@ -265,7 +265,7 @@
         <price>7.90</price>
         <year>1987</year>
         <anan>
-            <baban>1</baban>
+            <baban id='1'>1</baban>
         </anan>
     </cd>
     <cd>
@@ -276,7 +276,7 @@
         <price>7.20</price>
         <year>1985</year>
         <anan>
-            <baban>1</baban>
+            <baban id='1'>1</baban>
         </anan>
     </cd>
     <cd>
@@ -287,7 +287,7 @@
         <price>7.80</price>
         <year>1987</year>
         <anan>
-            <baban>1</baban>
+            <baban id='1'>1</baban>
         </anan>
     </cd>
     <cd>
@@ -298,7 +298,7 @@
         <price>8.20</price>
         <year>1987</year>
         <anan>
-            <baban>1</baban>
+            <baban id='1'>1</baban>
         </anan>
     </cd>
 </catalog>

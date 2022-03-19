@@ -39,13 +39,28 @@
                 <!-- <xsl:for-each select="catalog/cd/anan/baban='2'">
                      <h1><xsl:value-of select="amcan"/></h1>
                      </xsl:for-each> -->
-                <xsl:for-each select="//anan">
-                    <xsl:if test="baban='22222'">
-                        <h1><xsl:value-of select="../title"/></h1>
-                        <h1><xsl:value-of select="amcan"/></h1>
-                        <h2>xxx</h2>
-                    </xsl:if> 
+                <xsl:for-each select="//cd">
+                    <xsl:choose>
+                        <xsl:when test="country='USA'">
+                            <h1><xsl:value-of select="price"/></h1>
+                        </xsl:when>
+                        <xsl:when test="country='UK'">
+                            <h1><xsl:value-of select="year"/></h1>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <h1>lol</h1>
+                        </xsl:otherwise>
+                    </xsl:choose>
                 </xsl:for-each>
+                
+                <h1>___________x</h1>  
+                
+                <xsl:for-each select="//baban[text()='22222']">                    
+                    <h1><xsl:value-of select="../amcan"/></h1>  
+                    <h1>aaa</h1>  
+                </xsl:for-each>
+                
+                <h1>___________</h1>  
                 
                 <h1><xsl:value-of select="//*[text()='22222']/amcan"/></h1>
                 
